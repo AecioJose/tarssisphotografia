@@ -1,0 +1,330 @@
+main {
+    height: 90dvh;
+    background-color: rgb(156, 156, 0);
+    z-index: 1;
+  }
+  
+  main::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 90dvh;
+      width: 100%;
+      background: linear-gradient(to right, black 25%, transparent 60%);
+      z-index: 2;
+  }
+  
+  header {
+    /* background-color: blue; */
+    height: 10dvh;
+    z-index: 3;
+  }
+  
+  .main-content {
+    height: 80dvh;
+    width: 100%;
+    display: flex;
+  }
+  
+  .main-content-left,
+  .main-content-right {
+    height: 100%;
+    width: 50%;
+  }
+  
+  .main-content-left {
+      
+      display: flex;
+  }
+  .social-container {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 3;
+      padding-bottom: 5vh;
+  }
+  .line {
+      display: block;
+      height: 25%;
+      width: 4px;
+      border-radius: 1px;
+      background-color: #505759;
+  }
+  .instagram, .linkedin, .behance, .facebook{
+      height: 40px;
+      aspect-ratio: 1/1;
+      transition: all 0.3s ease;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .social-container svg, .social-icons svg {
+      height: 28px;
+      aspect-ratio: 1/1;
+  }
+  .instagram > svg {height: 45px;}
+  .facebook > svg {height: 50px;}
+  
+  .social-container svg:hover, .social-icons svg:hover{
+      transform: scale(1.15);
+  }
+  
+  .name-n-description {
+      height: 87%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      z-index: 3;
+  }
+  .name-n-description > h1 {
+      font-family: "Anton";
+      color: #FFFFFF;
+      font-size: 4.6rem;
+      letter-spacing: 1.5px;
+  }
+  .name-n-description > p {
+    font-family: "Roboto";
+      color: #FFFFFF;
+      font-size: 0.9rem;
+  }
+  
+  .btn-whats-main {
+      width: fit-content;
+      color: #f14800;
+      border: 4px solid #f14800;
+      padding: 8px 30px;
+  
+      text-decoration: none;
+      font-family: "Anton";
+      letter-spacing: 1px;
+      font-weight: 200;
+      font-size: 1.1rem;
+  
+      margin-top: 5%;
+  }
+  
+  .btn-whats-main:hover {
+      color: #f15b1a;
+      border-color: #f15b1a;
+  }
+  
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    background-color: #000;
+    padding: 5%;
+  }
+  .services {
+    border-radius: 50px;
+    background-color: #151515;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .servicesorange {
+    background-color: #f14800;
+  }
+  .servicesorange > .services-img-container > a {
+    background-color: #fff;
+    color: #000;
+  }
+  .services-text-container, .services-img-container {
+    width: 50%;
+    height: 80vh;
+  }
+  .services-text-container {
+    padding: 20px 50px;
+    border-radius: 35px 0 0 35px;
+    font-family: "Anton";
+    
+  }
+  .services-text-container > h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+  }
+  .services-text-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .services-text-container > div > p {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    
+  }
+  .services-img-container {
+    border-radius: 35px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .services-img-container > img {
+    width: 100%;
+    border-radius: 35px;
+  }
+  .services-img-container > a {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto";
+    background-color: #f14800;
+
+    border-radius: 30px;
+    padding: 5px 20px;
+
+    align-self: flex-end;
+
+    margin: 0 0 20px 0;
+  }
+  .services-img-container > a:hover {
+    background-color: #e75d22;
+  }
+
+
+  
+  .portfolio-container {
+      background-color: #000;
+  
+      font-family: "Anton", serif;
+  
+      padding: 5% 10% 0 10%;
+  }
+  .portfolio-container > h1 {
+      font-size: 5rem;
+      color: #f14800;
+      margin-bottom: 30px;
+      font-weight: bold;
+  }
+  .portfolio-buttons {
+      display: flex;
+      gap: 30px;
+  }
+  .portfolio-buttons > h2 {
+      cursor: pointer;
+
+      font-size: 1rem;
+      color: #fff;
+      font-weight: normal;
+      margin-bottom: 3%;
+  }
+  .portfolio-container h2:hover {
+      text-decoration: underline;
+      text-decoration-thickness: 3px; 
+      text-decoration-color: #f14800; 
+      text-underline-offset: 8px;
+  }
+  
+  .portfolio {
+      background-image: url("/views/images/background.png");
+      background-repeat: repeat-y;
+      background-attachment: fixed;
+      background-size: cover;
+      /* margin: 0 auto; */
+  
+      padding: 2% 0 6% 0;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+  
+      max-width: 1230px;
+  }
+  
+  .img-container {
+      object-fit: cover;
+      aspect-ratio: 3/3.5;
+      height: 29vw;
+      max-height: 395px;
+  }
+  
+  .clear-container {
+      background-color: #00000000;
+  }
+  
+  
+  .about-me {
+      background-color: #dfdfdf;
+      display: flex;
+  }
+  .about-me-IMG-container {
+      width: 40%;
+      display: flex;
+  }
+  .about-me-IMG-container span {
+      height: 5px;
+      width: 100%;
+      margin-top: 10%;
+      background-color: #f14800;
+  }
+  .about-me-IMG-container > img {
+      height: 80dvh;
+  }
+  .about-me-TEXT-container {
+      width: 60%;
+      padding: 5% 5% 2% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5%;
+  }
+  .about-me-TEXT-container h3 {
+      font-size: 1.9rem;
+  }
+  .about-me-TEXT-container p {
+      font-size: 1rem;
+  }
+  
+  
+  footer {
+      height: 25vh;
+      padding-top: 5vh;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  
+  .social-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+  }
+  
+  .rights > p {
+      color: #fff;
+      font-family: Verdana;
+  }
+  
+  .whatsapp-button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background-color: #4caf51;
+      padding: 8px 30px;
+  
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 1.25rem;
+  
+      border-radius: 10px;
+      transition: all 0.3s;
+  }
+  .whatsapp-button:hover {
+    background-color: #3ed446;
+  }
+  
