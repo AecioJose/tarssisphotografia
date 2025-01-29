@@ -1,14 +1,12 @@
 {
     "textos": [
       {
-        "id": 1,
         "titulo": "Texto página 1",
-        "conteudo": "Aqui vai o conteúdo do primeiro texto."
+        "conteudo": "A fotografia é minha forma de contar histórias e capturar emoções. Tenho como objetivo transmitir autenticidade, credibilidade e beleza, revelando a essência das pessoas em cada imagem."
       },
       {
-        "id": 2,
         "titulo": "Texto sobre mim",
-        "conteudo": "Aqui vai o conteúdo do segundo texto."
+        "conteudo": "Acho que sou uma pessoa bem-humorada, muito responsável, trabalhadora e emotiva. Gosto de criatividade e aprecio essa característica nos outros<br><br>Não gosto de mentir e me sinto mal quando os outros mentem.<br>Tento não me atrasar e odeio quando as pessoas não chegam na hora.<br>Prefiro me associar com pessoasinteligentes e educadas.<br> É muito irritante quando alguém em quem confio se mostra pouco confiável.<br><br>Minhas coisasfavoritas:<br>basquete<br>viajar<br>acampar<br>desenhar<br>cachorros"
       }
     ]
   }
