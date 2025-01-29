@@ -63,3 +63,8 @@ app.post('/admin/update', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
+
+// Função handler para Vercel
+// module.exports = (req, res) => {
+//   app(req, res); // Usando Express no modelo serverless
+// };

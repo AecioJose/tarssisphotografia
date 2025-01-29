@@ -71,7 +71,8 @@ function renderBannerCarrossel(parametro) {
             // Loop para adicionar os elementos
             let a = 1;
             for (let i = 1; i <= grid; i++) {
-                const element = document.createElement(clearSpace.includes(i) ? 'div' : 'img');
+                // const element = document.createElement(clearSpace.includes(i) ? 'div' : 'img');
+                const element = document.createElement('div')
                 element.classList.add('img-container');
 
                 if (!clearSpace.includes(i)) {
@@ -81,10 +82,16 @@ function renderBannerCarrossel(parametro) {
                     fetch('/data/images.json')
                         .then(response => response.json())
                         .then(imagesData => {
-                            const imageData = imagesData.imagens.find(image => image.id === capa);
+                            const imageData = imagesData.images.find(image => image.id === capa);
                             if (imageData) {
-                                element.src = imageData.caminho;
-                                element.alt = imageData.descricao;
+                                const img = document.createElement('img')
+                                img.src = imageData.caminho;
+                                img.alt = imageData.descricao;
+                                element.appendChild(img)
+
+                                const carrosselButton = document.createElement('div')
+                                carrosselButton.innerHTML = `<svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="currentColor" height="20" role="img" viewBox="0 0 48 48" width="20"><title>Carousel</title><path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path></svg>`
+                                element.appendChild(carrosselButton)
                                 // Adicionar evento de clique para abrir o pop-up
                                 element.addEventListener('click', () => openCarrosselPopUp(data[parametro][a - 1].imagesIDs));
                             }
@@ -108,7 +115,7 @@ function openCarrosselPopUp(imagesIDs) {
             carrosselContainer.classList.add('carrossel-container');
 
             let currentIndex = 0;
-            const images = imagesIDs.map(id => imagesData.imagens.find(image => image.id === id));
+            const images = imagesIDs.map(id => imagesData.images.find(image => image.id === id));
 
             carrosselContainer.innerHTML = `
                 <span class="close" style="display: inline-block; width: 35px; height: 35px; position: absolute; cursor: pointer; z-index: 999;">

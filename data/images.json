@@ -1,5 +1,10 @@
 {
-    "imagens": [
+    "images": [
+      {
+        "id": "mainBanner",
+        "descricao": "alt da imagem",
+        "caminho": "/public/images/portfolio/chadebebe.jpg"
+      },
       {
         "id": 1,
         "descricao": "alt da imagem",

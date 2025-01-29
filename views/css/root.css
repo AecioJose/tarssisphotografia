@@ -1,0 +1,7 @@
+:root {
+    --services-inverted: row;
+    --servicesOrange-inverted: row-reverse;
+
+    --services-default: row;
+    --servicesOrange-default: row;
+}

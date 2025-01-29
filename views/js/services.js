@@ -27,8 +27,8 @@ fetch('/data/services.json')
                     <div class="services-text-container">
                         <h2>${key}</h2>
                         <div>
-                            <p style="font-size: 1.5rem;">{O que está incluso no pacote ${key}}</p>
-                            <p>${formattedText}</p>
+                            <p class="subtitleServices">{O que está incluso no pacote ${key}}</p>
+                            <p class="servicesDescription">${formattedText}</p>
                         </div>
                     </div>
                     <div class="services-img-container">
