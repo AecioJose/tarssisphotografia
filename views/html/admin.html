@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Painel de Administração</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Painel ADM</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body>
-  <h1>Dashboard de Administração</h1>
-  <form action="/admin/update" method="POST">
-    <label for="title">Título:</label>
-    <input type="text" id="title" name="title" required><br><br>
+    <main>
+      <section class="main-section">
+        <h1>Pagina inicial</h1>
+        <div>
+          <p>Trocar Imagem</p>
+          <p>Trocar Texto</p>
+          <!-- <input id="fileInput" type="file" accept=".png, .jpeg, .webp"> -->
+        </div>
+      </section>
+
+      <section class="services-section">
+        <h1>Serviços</h1>
+        <div class="services-container"></div>
+      </section>
+
+      <section class="portfolio-section">
+        <h1>Portfolio</h1>
+        <div>
+
+        </div>
+      </section>
+
+      <section class="aboutme-section">
+        <h1>Sobre mim</h1>
+        <div>
+          <p>Trocar Texto</p>
+        </div>
+      </section>
+
+      <a style="text-decoration: none; color: #000; background-color: #fff; width: fit-content; padding: 5px 15px; border-radius: 25px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); font-weight: bold; margin: 0 0 0 auto;" href="https://tarssisphotografia.com.br" target="_blank">Visualizar Portfolio</a>
+    </main>
+    <script src="/js/admin-services.js"></script>
     
-    <label for="description">Descrição:</label>
-    <textarea id="description" name="description" required></textarea><br><br>
-    
-    <label for="image">Imagem (URL):</label>
-    <input type="text" id="image" name="image" required><br><br>
-    
-    <button type="submit">Atualizar Portfolio</button>
-  </form>
 </body>
 </html>
-<!-- 4, 6 ou 9 serão os layouts dos carrosseis -->
-<!-- Quantidade máxima de fotos por carrossel 10 fotos -->

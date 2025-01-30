@@ -3,57 +3,57 @@
       {
         "id": "mainBanner",
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 1,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 2,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 3,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 4,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 5,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 6,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 7,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 8,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 9,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       },
       {
         "id": 10,
         "descricao": "alt da imagem",
-        "caminho": "/public/images/portfolio/chadebebe.jpg"
+        "caminho": "/images/portfolio/chadebebe.jpg"
       }
     ]
 }

@@ -1,0 +1,37 @@
+{
+  "Retrato": [
+    {
+      "imagem": "/images/services/tarssis.jpg",
+      "text": "",
+      "altImagem": "Foto de fulano de tal"
+    }
+  ],
+  "Casamento": [
+    {
+      "imagem": "/images/services/tarssis.jpg",
+      "text": "* Alecrim\n *majericao\n *Arroz\n",
+      "altImagem": "Foto de fulano de tal"
+    }
+  ],
+  "Chá revelação": [
+    {
+      "imagem": "/images/services/tarssis.jpg",
+      "text": "",
+      "altImagem": "Foto de fulano de tal"
+    }
+  ],
+  "Empresarial": [
+    {
+      "imagem": "/images/services/tarssis.jpg",
+      "text": "",
+      "altImagem": "Foto de fulano de tal"
+    }
+  ],
+  "Aniversário": [
+    {
+      "imagem": "/images/services/tarssis.jpg",
+      "text": "* Alecrim\n * Majericao\n *Arroz\n * Feijão \n *Parreira",
+      "altImagem": "Foto de fulano de tal"
+    }
+  ]
+}
