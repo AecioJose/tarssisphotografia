@@ -107,7 +107,7 @@ function renderBannerCarrossel(parametro) {
 
 
 function openCarrosselPopUp(imagesIDs) {
-    console.log(imagesIDs)
+    // console.log(imagesIDs)
     fetch('/data/images.json')
         .then(response => response.json())
         .then(imagesData => {
@@ -128,9 +128,9 @@ function openCarrosselPopUp(imagesIDs) {
                     <img src="${images[0].caminho}" alt="${images[0].descricao}" id="imgCarrossel">
 
                     <div class="container-arrows">
-                        <span id="prevArrow" style="display: inline-block; background-repeat: no-repeat; background-position: -130px -98px; height: 30px; width: 30px; background-image: url('/public/arrow.png')"></span>
+                        <span id="prevArrow" style="display: inline-block; background-repeat: no-repeat; background-position: -130px -98px; height: 30px; width: 30px; background-image: url('/arrow.png')"></span>
 
-                        <span id="nextArrow" style="display: inline-block; background-repeat: no-repeat; background-position: -162px -98px; height: 30px; width: 30px; background-image: url('/public/arrow.png')"></span>
+                        <span id="nextArrow" style="display: inline-block; background-repeat: no-repeat; background-position: -162px -98px; height: 30px; width: 30px; background-image: url('/arrow.png')"></span>
 
                     </div>
 

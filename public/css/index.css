@@ -248,7 +248,7 @@ main {
   }
   
   .portfolio {
-      background-image: url("/views/images/background.png");
+      background-image: url("/images/background.png");
       background-repeat: repeat-y;
       background-attachment: fixed;
       background-size: cover;
