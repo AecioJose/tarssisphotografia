@@ -67,6 +67,12 @@ app.get('/logout', (req, res) => {
   });
 });
 
+// Redirecionamento de /links para o linktree
+app.get('/links', (req, res) => {
+  res.redirect('https://linktr.ee/pereiraphotografia');
+});
+
+
 // Rota para editar o conteúdo da seção services
 
 // app.post('/admin/renameService', (req, res) => {
